@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/book-store/static/css/main.9274cb08.css",
-    "main.js": "/book-store/static/js/main.8f4863f0.js",
+    "main.js": "/book-store/static/js/main.18d9529b.js",
     "static/js/787.4f7dbe64.chunk.js": "/book-store/static/js/787.4f7dbe64.chunk.js",
     "static/media/edit-book-details-cover.jpg": "/book-store/static/media/edit-book-details-cover.c2f5a5032e75ed246a41.jpg",
     "static/media/setting-h.svg": "/book-store/static/media/setting-h.4ea708622cadb490d5b86caa231855b0.svg",
@@ -18,11 +18,11 @@
     "static/media/star-fill.svg": "/book-store/static/media/star-fill.0063308ada4a8a16821f5a689fb0b4e1.svg",
     "static/media/book.svg": "/book-store/static/media/book.a6b332ad631182bcebf689b6ed094ee1.svg",
     "main.9274cb08.css.map": "/book-store/static/css/main.9274cb08.css.map",
-    "main.8f4863f0.js.map": "/book-store/static/js/main.8f4863f0.js.map",
+    "main.18d9529b.js.map": "/book-store/static/js/main.18d9529b.js.map",
     "787.4f7dbe64.chunk.js.map": "/book-store/static/js/787.4f7dbe64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9274cb08.css",
-    "static/js/main.8f4863f0.js"
+    "static/js/main.18d9529b.js"
   ]
 }
