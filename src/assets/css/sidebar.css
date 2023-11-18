@@ -1,0 +1,103 @@
+.app-sidebar {
+  background: #454664;
+  width: 80px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.app-sidebar .sidebar-menu {
+  width: 100%;
+  margin: 0 0 18.81vh;
+}
+
+.app-sidebar .sidebar-menu li {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.app-sidebar .sidebar-menu .menu-link {
+  padding: 25px 10px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.app-sidebar .sidebar-menu .menu-link:after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(180deg, #679cf6 0%, #4072ee 100%);
+  left: 0;
+  top: -1px;
+  height: calc(100% + 2px);
+  width: calc(100% + 10px);
+  border-radius: 0 5px 5px 0;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.app-sidebar .sidebar-menu li::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 20px;
+  background: #e8f0f8;
+}
+
+.app-sidebar .sidebar-menu .menu-link:hover:after,
+.app-sidebar .sidebar-menu .menu-link.active:after {
+  opacity: 1;
+}
+
+.app-sidebar .sidebar-menu .menu-link:hover::before,
+.app-sidebar .sidebar-menu .menu-link.active::before {
+  display: none;
+}
+
+.app-sidebar .sidebar-menu li .icon-wrap {
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0 auto;
+}
+
+.app-sidebar .sidebar-menu li .icon-wrap.stats {
+  width: 25px;
+  height: 25px;
+}
+
+.app-sidebar .sidebar-menu li .icon-wrap.fav {
+  width: 27px;
+  height: 18px;
+}
+
+.app-sidebar .sidebar-menu li .icon-wrap.setting {
+  width: 24px;
+  height: 25px;
+}
+
+.app-sidebar .sidebar-menu .menu-link .normal-img,
+.app-sidebar .sidebar-menu .menu-link:hover .hover-img,
+.app-sidebar .sidebar-menu .menu-link.active .hover-img {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.app-sidebar .sidebar-menu .menu-link .hover-img,
+.app-sidebar .sidebar-menu .menu-link:hover .normal-img,
+.app-sidebar .sidebar-menu .menu-link.active .normal-img {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}

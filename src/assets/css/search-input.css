@@ -1,0 +1,86 @@
+.search-input-wrapper {
+  position: relative;
+}
+
+.search-input-wrapper .search-icon {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  display: block;
+  line-height: 0;
+}
+
+.search-input-wrapper .search-input {
+  width: 100%;
+  padding: 10px 60px 10px 45px;
+}
+
+.search-input-wrapper .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 0 40px 40px 0;
+  background: #93b4bc;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.app-search .search-val {
+  margin: 10px 0 0;
+}
+
+.app-search .search-val span {
+  font-weight: 700;
+  color: #454664;
+}
+
+.search-input-wrapper .suggestions-block {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0 0 25px 25px;
+  overflow: hidden;
+  z-index: 3;
+  box-shadow: 0px 3px 3px -1px #ccc;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.app-search.suggestions-active .search-input {
+  border-radius: 40px 40px 40px 0;
+  box-shadow: none !important;
+}
+.app-search.suggestions-active .search-btn {
+  border-radius: 0 25px 0 0;
+}
+
+.search-input-wrapper .suggestions-block .no-record-found {
+  text-align: center;
+  padding: 10px 15px;
+  height: 52px;
+}
+
+.suggestions-block .custom-row-card {
+  margin: 0 !important;
+}
+
+.suggestions-block .custom-row-card:not(:last-child) {
+  border-bottom: 1px solid #93b4bc;
+}
+
+.suggestions-block .custom-row-card .favourite-btn,
+.suggestions-block .custom-row-card .app-ratings,
+.suggestions-block .custom-row-card .book-price,
+.suggestions-block .custom-row-card .card-actions-wrap {
+  display: none;
+}

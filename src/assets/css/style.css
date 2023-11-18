@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import "header.css";
+@import "loader.css";
+@import "form-controls.css";
+@import "sidebar.css";
+@import "search-input.css";
+@import "main.css";
+@import "media.css";

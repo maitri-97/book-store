@@ -1,0 +1,174 @@
+/* button style */
+
+.btn:focus-visible {
+  outline: none;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
+  text-transform: uppercase;
+  height: 52px;
+  min-width: 218px;
+  max-width: 100%;
+  border-radius: 40px;
+}
+
+.primary-btn {
+  color: #ffffff;
+  background: linear-gradient(180deg, #679cf6 0%, #4072ee 100%);
+}
+
+.secondary-btn {
+  color: #ffffff;
+  background: #4072ee;
+  height: 52px;
+  min-width: 218px;
+  max-width: 100%;
+  border-radius: 40px;
+}
+
+.text-btn {
+  color: #5b5b5b;
+  background: transparent;
+}
+
+/* input style */
+
+.custom-input {
+  font-size: 16px;
+  line-height: 20px;
+  color: #454664;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  background: #ffffff;
+  border: none;
+  height: 52px;
+}
+
+.custom-input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #5b5b5b;
+}
+
+.custom-input.search-input {
+  border-radius: 40px;
+}
+
+.custom-input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 3px 0px #454664;
+}
+
+.input-wrapper .custom-input {
+  padding: 0 0 0 140px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .input-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 115px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #93b4bc;
+  padding: 16px;
+  height: 100%;
+}
+
+.input-wrapper .rating-input {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.custom-input::-webkit-outer-spin-button,
+.custom-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.custom-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* custom alert css */
+
+.app-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  z-index: 6;
+  width: 420px;
+  max-width: 94%;
+}
+
+.app-alert .close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 2;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+
+.app-alert i[class*="-alert"] {
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  display: inline-block;
+  margin: 0 8px 0 0;
+  position: relative;
+  top: 4px;
+}
+
+.app-alert .head {
+  text-transform: capitalize;
+  padding: 20px 15px 5px;
+  font-weight: 700;
+}
+
+.app-alert .head p {
+  padding: 0 15px 0 0;
+}
+
+.app-alert .content {
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.app-alert .btn-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px 15px 20px;
+}
+
+.app-alert .btn-wrap .btn {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  height: 30px;
+  min-width: auto;
+  padding: 5px 18px;
+  border-radius: 0;
+}
+
+.app-alert .btn-wrap .btn:not(:last-child) {
+  margin: 0 10px 0 0;
+}
