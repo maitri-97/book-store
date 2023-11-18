@@ -11,12 +11,10 @@ import SettingHoverIcon from "../../src/assets/images/svg/setting-h.svg";
 
 const AppSidebar = () => {
   const location = useLocation();
-  const [activeList, setActiveList] = useState("statistics");
+  const [activeList, setActiveList] = useState("");
 
   useEffect(() => {
-    ["favourites"].includes(
-      location?.pathname?.split("/")[1]
-    )
+    ["favourites"].includes(location?.pathname?.split("/")[1])
       ? setActiveList("favourites")
       : setActiveList("statistics");
   }, [location]);

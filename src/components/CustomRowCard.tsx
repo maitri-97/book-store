@@ -56,7 +56,7 @@ const CustomRowCard: FC<Props> = ({
           >
             Edit
           </Link>
-          <span
+          {/* <span
             className="card-action"
             title="Delete"
             onClick={(e: React.MouseEvent<HTMLSpanElement>) =>
@@ -64,7 +64,7 @@ const CustomRowCard: FC<Props> = ({
             }
           >
             Delete
-          </span>
+          </span> */}
         </div>
         <FavouriteButton fav={fav} id={id} />
       </div>
