@@ -16,7 +16,6 @@ const BooksList = () => {
   const [title, setTitle] = useState<string>("New York Times Bestsellers");
 
   useEffect(() => {
-    console.log(location);
     let dataVal: any = data?.filter(
       (dataItem) =>
         dataItem?.title?.toLowerCase()?.includes(searchVal?.toLowerCase()) ||
@@ -44,7 +43,7 @@ const BooksList = () => {
     }
     setTitle(titleVal);
     setBooksData(dataVal);
-    searchData.current = data || [];
+    searchData.current = dataVal || [];
   }, [data, location?.pathname]);
 
   return (
